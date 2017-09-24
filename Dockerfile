@@ -2,12 +2,12 @@
 # This is maintained and intended to be run in AWS Docker instances with ECS support.
 # Based on the work by https://github.com/ConSol/docker-headless-vnc-container
 
-FROM ubuntu:14.04
+FROM ubuntu:17.04
 
-MAINTAINER Craig Williams "craig@ip80.com"
-ENV REFRESHED_AT 2015-12-02
+MAINTAINER Aras Memisyazici
+ENV REFRESHED_AT 2017-09-23
 
-ENV JAVA_VERSION 8u65
+ENV JAVA_VERSION 8u92
 ENV JAVA_HOME /usr/lib/jvm/java-$JAVA_VERSION
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -15,7 +15,7 @@ ENV DISPLAY :1
 ENV NO_VNC_HOME /root/noVNC
 ENV VNC_COL_DEPTH 24
 ENV VNC_RESOLUTION 1280x1024
-ENV VNC_PW vncpassword
+ENV VNC_PW student
 
 ENV SAKULI_DOWNLOAD_URL https://labs.consol.de/sakuli/install
 
